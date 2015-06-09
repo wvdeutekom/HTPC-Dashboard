@@ -1,0 +1,107 @@
+@import 's-grid-settings'
+@import 's-grid-functions'
+@import 's-grid-classes'
+
+
+base-font-size = 16px            // base font size it is 16px by default it is used to calculate rem sizes
+
+
+/* functions */
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+
+/* Set some basic rules */
+
+body
+    font base-font-size/1.6 'Open Sans', sans-serif;
+    color #333
+    background #224F65
+
+h4
+    color #545454
+    padding-bottom 8px
+
+h5
+    font-size 15px
+    color #666666
+
+ul
+    padding: 10px 10px 10px 25px;
+
+.enumeration-spacing
+    line-height 1.8
+
+li
+    margin 0px 0px .5em .5em
+
+hr
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+.information-links li
+    display inline
+    padding 0px
+    margin 0px 20px 0px 0px
+
+.information-links ul
+    padding 0px
+    margin 0px
+
+.content-wrapper
+    max-width 80rem
+    margin-left auto
+    margin-right auto
+    padding-top 20px
+    padding-bottom 20px
+    background #ecf0f1
+    .content-wrapper-cell
+        cell(1, 1)
+        padding 20px 50px
+        margin 0px
+
+.content-wrapper-grid
+    grid('row', 'stretch')
+
+.content-wrapper-col11
+    cell(1, 1, 'top', 0px)
+    padding 20px 50px
+
+.nobottompadding
+    padding 20px 0px 0px 50px !important
+
+.notoppadding
+    padding 0px 50px 20px 50px !important
+
+.content-wrapper-col12
+    cell(1, 2, 'top', 0px)
+    padding 20px 50px
+.content-wrapper-col420
+    cell(4, 20, 'top', 0px)
+    padding 20px 0px 20px 50px
+.content-wrapper-col45
+    cell(4, 5, 'top', 0px)
+    padding 20px 50px
+
+
+.personalia-image
+    border-radius(5px)
+    width 135px
+    height 135px
+    margin 10px 0px 0px 0px
+
+.personalia-table
+    width 500px
